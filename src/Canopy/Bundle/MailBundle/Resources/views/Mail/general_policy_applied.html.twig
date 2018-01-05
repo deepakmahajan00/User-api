@@ -1,0 +1,40 @@
+{% block subject -%}
+    Canopy Store: CSA updated
+{%- endblock %}
+
+{% block body_text %}
+    Dear All,
+
+    Latest CSA updated to system. Kindly accept/refuse the policy popup.
+
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Canopy Store: CSA updated
+        {% endblock %}
+
+        {% block body %}
+            Dear All,
+            <br /><br />
+            Latest CSA updated to system. Kindly accept/refuse the policy popup.
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

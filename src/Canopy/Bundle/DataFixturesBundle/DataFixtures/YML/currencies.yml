@@ -1,0 +1,300 @@
+AFN:
+    value: Afghani
+    iso_code: AFN
+EUR:
+    value: Euro
+    iso_code: EUR
+ALL:
+    value: Lek
+    iso_code: ALL
+DZD:
+    value: "Algerian Dinar"
+    iso_code: DZD
+USD:
+    value: "US Dollar"
+    iso_code: USD
+AOA:
+    value: Kwanza
+    iso_code: AOA
+XCD:
+    value: "East Caribbean Dollar"
+    iso_code: XCD
+ARS:
+    value: "Argentine Peso"
+    iso_code: ARS
+AMD:
+    value: "Armenian Dram"
+    iso_code: AMD
+AWG:
+    value: "Aruban Florin"
+    iso_code: AWG
+AUD:
+    value: "Australian Dollar"
+    iso_code: AUD
+AZN:
+    value: "Azerbaijanian Manat"
+    iso_code: AZN
+BSD:
+    value: "Bahamian Dollar"
+    iso_code: BSD
+BHD:
+    value: "Bahraini Dinar"
+    iso_code: BHD
+BDT:
+    value: Taka
+    iso_code: BDT
+BBD:
+    value: "Barbados Dollar"
+    iso_code: BBD
+BYR:
+    value: "Belarussian Ruble"
+    iso_code: BYR
+BZD:
+    value: "Belize Dollar"
+    iso_code: BZD
+XOF:
+    value: "CFA Franc BCEAO"
+    iso_code: XOF
+BMD:
+    value: "Bermudian Dollar"
+    iso_code: BMD
+BTN:
+    value: Ngultrum
+    iso_code: BTN
+INR:
+    value: "Indian Rupee"
+    iso_code: INR
+BOB:
+    value: Boliviano
+    iso_code: BOB
+BOV:
+    value: Mvdol
+    iso_code: BOV
+BAM:
+    value: "Convertible Mark"
+    iso_code: BAM
+BWP:
+    value: Pula
+    iso_code: BWP
+NOK:
+    value: "Norwegian Krone"
+    iso_code: NOK
+BRL:
+    value: "Brazilian Real"
+    iso_code: BRL
+BND:
+    value: "Brunei Dollar"
+    iso_code: BND
+BGN:
+    value: "Bulgarian Lev"
+    iso_code: BGN
+XOF:
+    value: "CFA Franc BCEAO"
+    iso_code: XOF
+BIF:
+    value: "Burundi Franc"
+    iso_code: BIF
+KHR:
+    value: Riel
+    iso_code: KHR
+XAF:
+    value: "CFA Franc BEAC"
+    iso_code: XAF
+CAD:
+    value: "Canadian Dollar"
+    iso_code: CAD
+CVE:
+    value: "Cabo Verde Escudo"
+    iso_code: CVE
+KYD:
+    value: "Cayman Islands Dollar"
+    iso_code: KYD
+XAF:
+    value: "CFA Franc BEAC"
+    iso_code: XAF
+CLF:
+    value: "Unidad de Fomento"
+    iso_code: CLF
+CLP:
+    value: "Chilean Peso"
+    iso_code: CLP
+CNY:
+    value: "Yuan Renminbi"
+    iso_code: CNY
+COP:
+    value: "Colombian Peso"
+    iso_code: COP
+COU:
+    value: "Unidad de Valor Real"
+    iso_code: COU
+KMF:
+    value: "Comoro Franc"
+    iso_code: KMF
+XAF:
+    value: "CFA Franc BEAC"
+    iso_code: XAF
+CDF:
+    value: "Congolese Franc"
+    iso_code: CDF
+NZD:
+    value: "New Zealand Dollar"
+    iso_code: NZD
+CRC:
+    value: "Costa Rican Colon"
+    iso_code: CRC
+HRK:
+    value: "Croatian Kuna"
+    iso_code: HRK
+CUC:
+    value: "Peso Convertible"
+    iso_code: CUC
+CUP:
+    value: "Cuban Peso"
+    iso_code: CUP
+ANG:
+    value: "Netherlands Antillean Guilder"
+    iso_code: ANG
+CZK:
+    value: "Czech Koruna"
+    iso_code: CZK
+DKK:
+    value: "Danish Krone"
+    iso_code: DKK
+DJF:
+    value: "Djibouti Franc"
+    iso_code: DJF
+DOP:
+    value: "Dominican Peso"
+    iso_code: DOP
+EGP:
+    value: "Egyptian Pound"
+    iso_code: EGP
+SVC:
+    value: "El Salvador Colon"
+    iso_code: SVC
+ERN:
+    value: Nakfa
+    iso_code: ERN
+ETB:
+    value: "Ethiopian Birr"
+    iso_code: ETB
+FKP:
+    value: "Falkland Islands Pound"
+    iso_code: FKP
+DKK:
+    value: "Danish Krone"
+    iso_code: DKK
+FJD:
+    value: "Fiji Dollar"
+    iso_code: FJD
+XPF:
+    value: "CFP Franc"
+    iso_code: XPF
+GMD:
+    value: Dalasi
+    iso_code: GMD
+GEL:
+    value: Lari
+    iso_code: GEL
+GHS:
+    value: "Ghana Cedi"
+    iso_code: GHS
+GIP:
+    value: "Gibraltar Pound"
+    iso_code: GIP
+GTQ:
+    value: Quetzal
+    iso_code: GTQ
+GBP:
+    value: "Pound Sterling"
+    iso_code: GBP
+GNF:
+    value: "Guinea Franc"
+    iso_code: GNF
+GYD:
+    value: "Guyana Dollar"
+    iso_code: GYD
+HTG:
+    value: Gourde
+    iso_code: HTG
+HNL:
+    value: Lempira
+    iso_code: HNL
+HKD:
+    value: "Hong Kong Dollar"
+    iso_code: HKD
+HUF:
+    value: Forint
+    iso_code: HUF
+ISK:
+    value: "Iceland Krona"
+    iso_code: ISK
+IDR:
+    value: Rupiah
+    iso_code: IDR
+XDR:
+    value: "SDR (Special Drawing Right)"
+    iso_code: XDR
+IRR:
+    value: "Iranian Rial"
+    iso_code: IRR
+IQD:
+    value: "Iraqi Dinar"
+    iso_code: IQD
+GBP:
+    value: "Pound Sterling"
+    iso_code: GBP
+ILS:
+    value: "New Israeli Sheqel"
+    iso_code: ILS
+JMD:
+    value: "Jamaican Dollar"
+    iso_code: JMD
+JPY:
+    value: Yen
+    iso_code: JPY
+JOD:
+    value: "Jordanian Dinar"
+    iso_code: JOD
+KZT:
+    value: Tenge
+    iso_code: KZT
+KES:
+    value: "Kenyan Shilling"
+    iso_code: KES
+KPW:
+    value: "North Korean Won"
+    iso_code: KPW
+KRW:
+    value: KOREA
+    iso_code: KRW
+KWD:
+    value: "Kuwaiti Dinar"
+    iso_code: KWD
+KGS:
+    value: Som
+    iso_code: KGS
+LAK:
+    value: Kip
+    iso_code: LAK
+LBP:
+    value: "Lebanese Pound"
+    iso_code: LBP
+LSL:
+    value: Loti
+    iso_code: LSL
+ZAR:
+    value: Rand
+    iso_code: ZAR
+LRD:
+    value: "Liberian Dollar"
+    iso_code: LRD
+LYD:
+    value: "Libyan Dinar"
+    iso_code: LYD
+CHF:
+    value: "Swiss Franc"
+    iso_code: CHF
+MOP:
+    value: Pataca
+    iso_code: MOP

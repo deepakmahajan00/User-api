@@ -1,0 +1,63 @@
+{% block subject -%}
+    Canopy Enterprise Platform: Thank you for your order
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ first_name }},
+
+    We would like to notify you that a member of your organisation, {{ requestor_name }}  has just completed the following order {{ order.uuid }} 
+
+    {% for item in order.cart.items %}
+    	{{ item.custom_name }} [{{ item.uuid }}] - {% if item.trial == true %} TRIAL {% else %} BUY {% endif %}
+    {% endfor %}
+    
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Canopy Enterprise Platform: Thank you for your order
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ first_name }},
+            <br /><br />
+            We would like  to notify you that a member of your organisation, {{ requestor_name }}  has just completed the following order {{ order.uuid }}
+            <br /><br />
+            <table border="1" cellpadding="5" cellspacing="0">
+		        <thead>
+		            <tr>
+		                <th>Name</th>
+		                <th>Purchase Id</th>
+		                <th>Trial/Buy</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            {% for item in order.cart.items %}
+		            	<tr>
+				    		<td>{{ item.custom_name }}</td>
+				    		<td>{{ item.uuid }}</td>
+				    		<td>{% if item.trial == true %} TRIAL {% else %} BUY {% endif %}</td>
+				    	</tr>
+				    {% endfor %}
+		    	</tbody>
+		    </table>
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

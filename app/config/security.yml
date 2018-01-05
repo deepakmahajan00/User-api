@@ -1,0 +1,58 @@
+security:
+    providers:
+        unboundid:
+            id: canopy.unboundid.user_provider
+        canopy_cordys:
+            memory:
+                users:
+                    cordysapi:  { password: "%canopy_cordys_api_password%", roles: 'ROLE_USER' }
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        user_cordys_callback:
+            pattern: "^/api/users/.*/update-cordys-user$"
+            methods: [PUT]
+            http_basic: 
+                realm: "Canopy User API"
+            provider: canopy_cordys
+
+        user_creation:
+            pattern: ^/api/users$
+            methods: [POST]
+            security: false
+            
+        currency_fetch:
+            pattern: ^/api/currencies$
+            methods: [GET]
+            security: false
+
+        country_fetch:
+            pattern: ^/api/countries$
+            methods: [GET]
+            security: false
+
+        user_authentification:
+            pattern: ^/api/users/authenticate$
+            methods: [POST]
+            security: false
+
+        user_reset_password:
+            pattern: ^/api/(users|mails)/reset-password
+            methods: [POST]
+            security: false
+
+        documentation:
+            pattern: ^/api/doc
+            security: false
+
+        secured_area:
+            pattern: ^/
+            stateless: true
+            simple_preauth:
+                authenticator: canopy.apitoken_authenticator

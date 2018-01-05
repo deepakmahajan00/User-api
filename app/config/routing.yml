@@ -1,0 +1,18 @@
+canopy_user:
+    resource: "@CanopyUserBundle/Controller/"
+    type:     annotation
+
+canopy_mail:
+    resource: "@CanopyMailBundle/Controller/"
+    type:     annotation
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+nelmio_api_doc_index:
+    pattern: /api/doc
+    defaults: { _controller: NelmioApiDocBundle:ApiDoc:index }
+    requirements:
+        _method: GET
+

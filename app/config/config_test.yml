@@ -1,0 +1,31 @@
+imports:
+    - { resource: config_dev.yml }
+
+framework:
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
+    profiler:
+        collect: false
+
+doctrine:
+    dbal:
+        dbname: "%database_name%_test"
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+swiftmailer:
+    disable_delivery: true
+
+liip_functional_test: ~
+
+# Fake authentification from the request
+services:
+    canopy.apitoken_authenticator:
+        class: Canopy\Bundle\UserBundle\Tests\Fake\Authentication\UserAuthenticatorFake
+        arguments: [ canopy.oauth.unbound_id.client, @logger ]
+    canopy.unboundid.user_provider:
+        class: Canopy\Bundle\UserBundle\Tests\Fake\Authentication\UserProviderFake
+        arguments: [ @doctrine.orm.entity_manager ]

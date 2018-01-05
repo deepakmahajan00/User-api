@@ -1,0 +1,167 @@
+-
+    unboundIdUuid: 9f8a23-0c5ed372-0901-43e7-8346-8ece3a840527
+    firstname: Registered
+    lastname: John
+    email: registered-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_REGISTERED_USER
+    verified: false
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb2
+    answeredLatestPolicy: false
+    currency: Currency.USD
+    customerId: null
+    organisationOwner: false
+    organisation: null
+    roles:
+        - ROLE_REGISTERED_USER
+
+-
+    unboundIdUuid: 9f8a23-ba942a99-2884-4e3f-84a9-e27e94a398f3
+    firstname: Registered2
+    lastname: John
+    email: registered-user2@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_USER_VERIFIED
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: null
+    organisationOwner: false
+    organisation: null
+    roles:
+        - ROLE_REGISTERED_USER
+
+-
+    unboundIdUuid: 9f8a23-baf4c49a-7feb-4580-84f3-55db98719a09
+    firstname: Requestor
+    lastname: John
+    email: requestor-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_CUSTOMER_REQUESTOR
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: canopy
+    organisationOwner: false
+    organisation: Organisation.Canopy
+    roles:
+        - ROLE_CUSTOMER_REQUESTOR
+
+-
+    unboundIdUuid: 9f8a23-edb19a5f-3c98-4c41-8931-6da052d0f7c1
+    firstname: Approver
+    lastname: John
+    email: approver-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_CUSTOMER_APPROVER
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: canopy
+    organisationOwner: true
+    organisation: Organisation.Canopy
+    roles:
+        - ROLE_CUSTOMER_APPROVER
+
+-
+    unboundIdUuid: 9f8a23-c6e95011-9200-4d4c-a29a-eec4f4341111
+    firstname: Admin
+    lastname: John
+    email: admin-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_CUSTOMER_APPROVER
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: null
+    organisationOwner: false
+    organisation: null
+    roles:
+        - ROLE_ADMIN
+
+-
+    unboundIdUuid: 9f8a23-9ab8f125-cca3-4032-8181-664b0763836e
+    firstname: Requestor
+    lastname: McGrawHill
+    email: requestor-mcg-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_CUSTOMER_REQUESTOR
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: mcg
+    organisationOwner: false
+    organisation: Organisation.McGraw Hill
+    roles:
+        - ROLE_CUSTOMER_REQUESTOR
+
+-
+    unboundIdUuid: 9f8a23-0e8571e8-62d1-4567-8109-502fa2fad2d9
+    firstname: Approver
+    lastname: McGrawHill
+    email: approver-mcg-user@yopmail.com
+    avatar: //i.imgur.com/90dbpHF.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: Canopy
+    fromCompany: canopy
+    vatNumber: VAT_NUMBER_CUSTOMER_APPROVER
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    currency: Currency.USD
+    customerId: canopy
+    organisationOwner: true
+    organisation: Organisation.McGraw Hill
+    roles:
+        - ROLE_CUSTOMER_APPROVER
+
+-
+    unboundIdUuid: 9f8a23-1a816f40-501c-459e-b44d-fe88f6b7cbcc
+    firstname: Sample
+    lastname: User35
+    email: sampleuser35@yopmail.com
+    avatar: //i.imgur.com/J6ebe6p.png
+    dialingCode: '+33'
+    mobileNumber: 123456789
+    company: VMWare
+    fromCompany: Canopy
+    vatNumber: VAT_NUMBER_ADMIN_SMITH
+    verified: true
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    customerId: null
+    currency: Currency.USD
+    organisation: null
+    organisationOwner: false
+    roles:
+        - ROLE_ADMIN

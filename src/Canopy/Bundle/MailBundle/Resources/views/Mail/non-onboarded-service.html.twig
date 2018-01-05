@@ -1,0 +1,62 @@
+{% block subject -%}
+    [CEP] - Customer Product Inquiry
+{%- endblock %}
+
+{% block body_text %}
+    Dear Cloud Sales Desk Team,
+    
+    Following customer request has been expressed interest in following product, Kindly look into the same.
+    
+    First Name: {{ firstname }}
+    Last Name: {{ lastname }}
+    Email Address: {{ email }}
+    Customer ID: {{ customer_id }}
+    Product: {{ service_title }}
+    Organization Name: {{ organisation_name }}
+    Country: {{ country_name }}
+    
+    If you have any queries, please drop us a mail at CEP-Operations@canopy-cloud.com and we will get back to you.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            [CEP] - Customer Product Inquiry
+        {% endblock %}
+
+        {% block body %}
+            Dear Cloud Sales Desk Team,
+            <br/><br/>
+            Following customer request has been expressed interest in following product, Kindly look into the same.
+            <br/><br/>
+            First Name: {{ firstname }}
+            <br/>
+            Last Name: {{ lastname }}
+            <br/>
+            Email Address: <a href="{{ email }}">{{ email }}</a>
+            <br/>
+            Customer ID: {{ customer_id }}
+            <br/>
+            Product: {{ service_title }}
+            <br/>
+            Organization Name: {{ organisation_name }}
+            <br/>
+            Country: {{ country_name }}
+            <br/><br/>
+            If you have any queries, please drop us a mail at <a href="mailto:CEP-Operations@canopy-cloud.com">CEP-Operations@canopy-cloud.com</a> and we will get back to you.
+            <br/><br/>
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

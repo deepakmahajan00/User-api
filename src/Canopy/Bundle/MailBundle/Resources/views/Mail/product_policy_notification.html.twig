@@ -1,0 +1,40 @@
+{% block subject -%}
+    Canopy Store: New T&C for {{ title }}
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ fullname }},
+
+    A new Terms & Conditions will be available soon for the product : {{ title }}.
+
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Canopy Store: New T&C for {{ title }}
+        {% endblock %}
+
+        {% block body %}
+            Dear All,
+            <br /><br />
+            A new Terms & Conditions will be available soon for the product : {{ title }}.
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

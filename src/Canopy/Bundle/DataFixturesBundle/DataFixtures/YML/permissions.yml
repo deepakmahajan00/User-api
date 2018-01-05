@@ -1,0 +1,45 @@
+-
+    name: PERM_LOGIN
+    description: 'Login capability'
+-
+    name: PERM_LOGOUT
+    description: 'Logout capability'
+-
+    name: PERM_REGISTER
+    description: 'Registration form access'
+-
+    name: PERM_CART
+    description: 'Capability to have a cart (+ add items) (+ page access)'
+-
+    name: PERM_ORDER
+    description: 'Capability to transform a cart to an order'
+-
+    name: PERM_DASHBOARD_SOLUTION_SHOW
+    description: 'Show the user''s solutions in Dashboard'
+-
+    name: PERM_DASHBOARD_ORGANISATION_SHOW
+    description: 'Show the user''s organisation in Dashboard'
+-
+    name: PERM_DASHBOARD_ORGANISATION_ACTIVITY_SHOW
+    description: 'Show the activity of the user''s organisation in Dashboard'
+-
+    name: PERM_DASHBOARD_ORGANISATION_USER_SHOW
+    description: 'Show the users in user''s organisation in Dashboard'
+-
+    name: PERM_DASHBOARD_ORGANISATION_USER_EDIT
+    description: 'Edit the users in user''s organisation in Dashboard'
+-
+    name: PERM_DASHBOARD_POLICY
+    description: 'Manage the policies in Dashboard'
+-
+    name: PERM_DASHBOARD_ADMIN_USER_ACTIVITY_SHOW
+    description: 'Show all user''s activities in Dashboard'
+-
+    name: PERM_DASHBOARD_ORGANISATION_EDIT
+    description: 'Edit the user''s organisation in Dashboard'
+-
+    name: PERM_DASHBOARD_PRODUCT_MANAGEMENT
+    description: 'Manage the products in Dashboard'
+-
+    name: PERM_DASHBOARD_ADMIN_USER_EDIT
+    description: 'Manage all users in Dashboard'

@@ -1,0 +1,40 @@
+{% block subject -%}
+    Canopy Store: Account Blocked
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ fullname }},
+
+    Your Canopy Store account has been blocked by your organization approver or system admin.
+
+    If you require any further assistance do not hesistate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Canopy Enterprise Platform: Account Blocked
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ fullname }},
+            <br /><br />
+            Your Canopy Store account has been blocked by your organization approver or system admin.
+            <br /><br />
+            If you require any further assistance do not hesistate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

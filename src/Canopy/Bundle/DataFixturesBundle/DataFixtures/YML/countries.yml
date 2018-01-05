@@ -1,0 +1,1439 @@
+AF:
+    iso_2: AF
+    en: 'Afghanistan'
+    fr: 'Afghanistan'
+    dialing_code: '+93'
+
+AL::
+    iso_2: AL
+    en: 'Albania'
+    fr: 'Albania'
+    dialing_code: '+355'
+
+DZ::
+    iso_2: DZ
+    en: 'Algeria'
+    fr: 'Algeria'
+    dialing_code: '+213'
+
+AS::
+    iso_2: AS
+    en: 'American Samoa'
+    fr: 'American Samoa'
+    dialing_code: '+1-684'
+
+AD::
+    iso_2: AD
+    en: 'Andorra'
+    fr: 'Andorra'
+    dialing_code: '+376'
+
+AO::
+    iso_2: AO
+    en: 'Angola'
+    fr: 'Angola'
+    dialing_code: '+244'
+
+AI::
+    iso_2: AI
+    en: 'Anguilla'
+    fr: 'Anguilla'
+    dialing_code: '+1-264'
+
+AQ::
+    iso_2: AQ
+    en: 'Antarctica'
+    fr: 'Antarctica'
+    dialing_code: '+672'
+
+AG:::
+    iso_2: AG
+    en: 'Antigua and Barbuda'
+    fr: 'Antigua and Barbuda'
+    dialing_code: '+1-268'
+
+AR::
+    iso_2: AR
+    en: 'Argentina'
+    fr: 'Argentina'
+    dialing_code: '+54'
+
+AM::
+    iso_2: AM
+    en: 'Armenia'
+    fr: 'Armenia'
+    dialing_code: '+374'
+
+AW::
+    iso_2: AW
+    en: 'Aruba'
+    fr: 'Aruba'
+    dialing_code: '+297'
+
+AU:
+    iso_2: AU
+    en: 'Australia'
+    fr: 'Australia'
+    dialing_code: '+61'
+
+AT:
+    iso_2: AT
+    en: 'Austria'
+    fr: 'Austria'
+    dialing_code: '+43'
+
+AZ:
+    iso_2: AZ
+    en: 'Azerbaijan'
+    fr: 'Azerbaijan'
+    dialing_code: '+994'
+
+BS:
+    iso_2: BS
+    en: 'Bahamas'
+    fr: 'Bahamas'
+    dialing_code: '+1-242'
+
+BH:
+    iso_2: BH
+    en: 'Bahrain'
+    fr: 'Bahrain'
+    dialing_code: '+973'
+
+BD:
+    iso_2: BD
+    en: 'Bangladesh'
+    fr: 'Bangladesh'
+    dialing_code: '+880'
+
+BB:
+    iso_2: BB
+    en: 'Barbados'
+    fr: 'Barbados'
+    dialing_code: '+1-246'
+
+BY:
+    iso_2: BY
+    en: 'Belarus'
+    fr: 'Belarus'
+    dialing_code: '+375'
+
+BE:
+    iso_2: BE
+    en: 'Belgium'
+    fr: 'Belgium'
+    dialing_code: '+32'
+
+BZ:
+    iso_2: BZ
+    en: 'Belize'
+    fr: 'Belize'
+    dialing_code: '+501'
+
+BJ:
+    iso_2: BJ
+    en: 'Benin'
+    fr: 'Benin'
+    dialing_code: '+229'
+
+BM:
+    iso_2: BM
+    en: 'Bermuda'
+    fr: 'Bermuda'
+    dialing_code: '+1-441'
+
+BT:
+    iso_2: BT
+    en: 'Bhutan'
+    fr: 'Bhutan'
+    dialing_code: '+975'
+
+BO:
+    iso_2: BO
+    en: 'Bolivia'
+    fr: 'Bolivia'
+    dialing_code: '+591'
+
+BA:
+    iso_2: BA
+    en: 'Bosnia and Herzegovina'
+    fr: 'Bosnia and Herzegovina'
+    dialing_code: '+387'
+
+BW:
+    iso_2: BW
+    en: 'Botswana'
+    fr: 'Botswana'
+    dialing_code: '+267'
+
+BR:
+    iso_2: BR
+    en: 'Brazil'
+    fr: 'Brazil'
+    dialing_code: '+55'
+
+IO:
+    iso_2: IO
+    en: 'British Indian Ocean Territory'
+    fr: 'British Indian Ocean Territory'
+    dialing_code: '+246'
+
+VG:
+    iso_2: VG
+    en: 'British Virgin Islands'
+    fr: 'British Virgin Islands'
+    dialing_code: '+1-284'
+
+BN:
+    iso_2: BN
+    en: 'Brunei'
+    fr: 'Brunei'
+    dialing_code: '+673'
+
+BG:
+    iso_2: BG
+    en: 'Bulgaria'
+    fr: 'Bulgaria'
+    dialing_code: '+359'
+
+BF:
+    iso_2: BF
+    en: 'Burkina Faso'
+    fr: 'Burkina Faso'
+    dialing_code: '+226'
+
+BI:
+    iso_2: BI
+    en: 'Burundi'
+    fr: 'Burundi'
+    dialing_code: '+257'
+
+KH:
+    iso_2: KH
+    en: 'Cambodia'
+    fr: 'Cambodia'
+    dialing_code: '+855'
+
+CM:
+    iso_2: CM
+    en: 'Cameroon'
+    fr: 'Cameroon'
+    dialing_code: '+237'
+
+CA:
+    iso_2: CA
+    en: 'Canada'
+    fr: 'Canada'
+    dialing_code: '+1'
+
+CV:
+    iso_2: CV
+    en: 'Cape Verde'
+    fr: 'Cape Verde'
+    dialing_code: '+238'
+
+KY:
+    iso_2: KY
+    en: 'Cayman Islands'
+    fr: 'Cayman Islands'
+    dialing_code: '+1-345'
+
+CF:
+    iso_2: CF
+    en: 'Central African Republic'
+    fr: 'Central African Republic'
+    dialing_code: '+236'
+
+TD:
+    iso_2: TD
+    en: 'Chad'
+    fr: 'Chad'
+    dialing_code: '+235'
+
+CL:
+    iso_2: CL
+    en: 'Chile'
+    fr: 'Chile'
+    dialing_code: '+56'
+
+CN:
+    iso_2: CN
+    en: 'China'
+    fr: 'China'
+    dialing_code: '+86'
+
+CX:
+    iso_2: CX
+    en: 'Christmas Island'
+    fr: 'Christmas Island'
+    dialing_code: '+61'
+
+CC:
+    iso_2: CC
+    en: 'Cocos Islands'
+    fr: 'Cocos Islands'
+    dialing_code: '+61'
+
+CO:
+    iso_2: CO
+    en: 'Colombia'
+    fr: 'Colombia'
+    dialing_code: '+57'
+
+KM:
+    iso_2: KM
+    en: 'Comoros'
+    fr: 'Comoros'
+    dialing_code: '+269'
+
+CK:
+    iso_2: CK
+    en: 'Cook Islands'
+    fr: 'Cook Islands'
+    dialing_code: '+682'
+
+CR:
+    iso_2: CR
+    en: 'Costa Rica'
+    fr: 'Costa Rica'
+    dialing_code: '+506'
+
+HR:
+    iso_2: HR
+    en: 'Croatia'
+    fr: 'Croatia'
+    dialing_code: '+385'
+
+CU:
+    iso_2: CU
+    en: 'Cuba'
+    fr: 'Cuba'
+    dialing_code: '+53'
+
+CW:
+    iso_2: CW
+    en: 'Curacao'
+    fr: 'Curacao'
+    dialing_code: '+599'
+
+CY:
+    iso_2: CY
+    en: 'Cyprus'
+    fr: 'Cyprus'
+    dialing_code: '+357'
+
+CZ:
+    iso_2: CZ
+    en: 'Czech Republic'
+    fr: 'Czech Republic'
+    dialing_code: '+420'
+
+CD:
+    iso_2: CD
+    en: 'Democratic Republic of the Congo'
+    fr: 'Democratic Republic of the Congo'
+    dialing_code: '+243'
+
+DK:
+    iso_2: DK
+    en: 'Denmark'
+    fr: 'Denmark'
+    dialing_code: '+45'
+
+DJ:
+    iso_2: DJ
+    en: 'Djibouti'
+    fr: 'Djibouti'
+    dialing_code: '+253'
+
+DM:
+    iso_2: DM
+    en: 'Dominica'
+    fr: 'Dominica'
+    dialing_code: '+1-767'
+
+DO:
+    iso_2: DO
+    en: 'Dominican Republic'
+    fr: 'Dominican Republic'
+    dialing_code: '+1-809, 1-829, 1-849'
+
+TL:
+    iso_2: TL
+    en: 'East Timor'
+    fr: 'East Timor'
+    dialing_code: '+670'
+
+EC:
+    iso_2: EC
+    en: 'Ecuador'
+    fr: 'Ecuador'
+    dialing_code: '+593'
+
+EG:
+    iso_2: EG
+    en: 'Egypt'
+    fr: 'Egypt'
+    dialing_code: '+20'
+
+SV:
+    iso_2: SV
+    en: 'El Salvador'
+    fr: 'El Salvador'
+    dialing_code: '+503'
+
+GQ:
+    iso_2: GQ
+    en: 'Equatorial Guinea'
+    fr: 'Equatorial Guinea'
+    dialing_code: '+240'
+
+ER:
+    iso_2: ER
+    en: 'Eritrea'
+    fr: 'Eritrea'
+    dialing_code: '+291'
+
+EE:
+    iso_2: EE
+    en: 'Estonia'
+    fr: 'Estonia'
+    dialing_code: '+372'
+
+ET:
+    iso_2: ET
+    en: 'Ethiopia'
+    fr: 'Ethiopia'
+    dialing_code: '+251'
+
+FK:
+    iso_2: FK
+    en: 'Falkland Islands'
+    fr: 'Falkland Islands'
+    dialing_code: '+500'
+
+FO:
+    iso_2: FO
+    en: 'Faroe Islands'
+    fr: 'Faroe Islands'
+    dialing_code: '+298'
+
+FJ:
+    iso_2: FJ
+    en: 'Fiji'
+    fr: 'Fiji'
+    dialing_code: '+679'
+
+FI:
+    iso_2: FI
+    en: 'Finland'
+    fr: 'Finland'
+    dialing_code: '+358'
+
+FR:
+    iso_2: FR
+    en: 'France'
+    fr: 'France'
+    dialing_code: '+33'
+
+PF:
+    iso_2: PF
+    en: 'French Polynesia'
+    fr: 'French Polynesia'
+    dialing_code: '+689'
+
+GA:
+    iso_2: GA
+    en: 'Gabon'
+    fr: 'Gabon'
+    dialing_code: '+241'
+
+GM:
+    iso_2: GM
+    en: 'Gambia'
+    fr: 'Gambia'
+    dialing_code: '+220'
+
+GE:
+    iso_2: GE
+    en: 'Georgia'
+    fr: 'Georgia'
+    dialing_code: '+995'
+
+DE:
+    iso_2: DE
+    en: 'Germany'
+    fr: 'Germany'
+    dialing_code: '+49'
+
+GH:
+    iso_2: GH
+    en: 'Ghana'
+    fr: 'Ghana'
+    dialing_code: '+233'
+
+GI:
+    iso_2: GI
+    en: 'Gibraltar'
+    fr: 'Gibraltar'
+    dialing_code: '+350'
+
+GR:
+    iso_2: GR
+    en: 'Greece'
+    fr: 'Greece'
+    dialing_code: '+30'
+
+GL:
+    iso_2: GL
+    en: 'Greenland'
+    fr: 'Greenland'
+    dialing_code: '+299'
+
+GD:
+    iso_2: GD
+    en: 'Grenada'
+    fr: 'Grenada'
+    dialing_code: '+1-473'
+
+GU:
+    iso_2: GU
+    en: 'Guam'
+    fr: 'Guam'
+    dialing_code: '+1-671'
+
+GT:
+    iso_2: GT
+    en: 'Guatemala'
+    fr: 'Guatemala'
+    dialing_code: '+502'
+
+GG:
+    iso_2: GG
+    en: 'Guernsey'
+    fr: 'Guernsey'
+    dialing_code: '+44-1481'
+
+GN:
+    iso_2: GN
+    en: 'Guinea'
+    fr: 'Guinea'
+    dialing_code: '+224'
+
+GW:
+    iso_2: GW
+    en: 'Guinea-Bissau'
+    fr: 'Guinea-Bissau'
+    dialing_code: '+245'
+
+GY:
+    iso_2: GY
+    en: 'Guyana'
+    fr: 'Guyana'
+    dialing_code: '+592'
+
+HT:
+    iso_2: HT
+    en: 'Haiti'
+    fr: 'Haiti'
+    dialing_code: '+509'
+
+HN:
+    iso_2: HN
+    en: 'Honduras'
+    fr: 'Honduras'
+    dialing_code: '+504'
+
+HK:
+    iso_2: HK
+    en: 'Hong Kong'
+    fr: 'Hong Kong'
+    dialing_code: '+852'
+
+HU:
+    iso_2: HU
+    en: 'Hungary'
+    fr: 'Hungary'
+    dialing_code: '+36'
+
+IS:
+    iso_2: IS
+    en: 'Iceland'
+    fr: 'Iceland'
+    dialing_code: '+354'
+
+IN:
+    iso_2: IN
+    en: 'India'
+    fr: 'India'
+    dialing_code: '+91'
+
+ID:
+    iso_2: ID
+    en: 'Indonesia'
+    fr: 'Indonesia'
+    dialing_code: '+62'
+
+IR:
+    iso_2: IR
+    en: 'Iran'
+    fr: 'Iran'
+    dialing_code: '+98'
+
+IQ:
+    iso_2: IQ
+    en: 'Iraq'
+    fr: 'Iraq'
+    dialing_code: '+964'
+
+IE:
+    iso_2: IE
+    en: 'Ireland'
+    fr: 'Ireland'
+    dialing_code: '+353'
+
+IM:
+    iso_2: IM
+    en: 'Isle of Man'
+    fr: 'Isle of Man'
+    dialing_code: '+44-1624'
+
+IL:
+    iso_2: IL
+    en: 'Israel'
+    fr: 'Israel'
+    dialing_code: '+972'
+
+IT:
+    iso_2: IT
+    en: 'Italy'
+    fr: 'Italy'
+    dialing_code: '+39'
+
+CI:
+    iso_2: CI
+    en: 'Ivory Coast'
+    fr: 'Ivory Coast'
+    dialing_code: '+225'
+
+JM:
+    iso_2: JM
+    en: 'Jamaica'
+    fr: 'Jamaica'
+    dialing_code: '+1-876'
+
+JP:
+    iso_2: JP
+    en: 'Japan'
+    fr: 'Japan'
+    dialing_code: '+81'
+
+JE:
+    iso_2: JE
+    en: 'Jersey'
+    fr: 'Jersey'
+    dialing_code: '+44-1534'
+
+JO:
+    iso_2: JO
+    en: 'Jordan'
+    fr: 'Jordan'
+    dialing_code: '+962'
+
+KZ:
+    iso_2: KZ
+    en: 'Kazakhstan'
+    fr: 'Kazakhstan'
+    dialing_code: '+7'
+
+KE:
+    iso_2: KE
+    en: 'Kenya'
+    fr: 'Kenya'
+    dialing_code: '+254'
+
+KI:
+    iso_2: KI
+    en: 'Kiribati'
+    fr: 'Kiribati'
+    dialing_code: '+686'
+
+XK:
+    iso_2: XK
+    en: 'Kosovo'
+    fr: 'Kosovo'
+    dialing_code: '+383'
+
+KW:
+    iso_2: KW
+    en: 'Kuwait'
+    fr: 'Kuwait'
+    dialing_code: '+965'
+
+KG:
+    iso_2: KG
+    en: 'Kyrgyzstan'
+    fr: 'Kyrgyzstan'
+    dialing_code: '+996'
+
+LA:
+    iso_2: LA
+    en: 'Laos'
+    fr: 'Laos'
+    dialing_code: '+856'
+
+LV:
+    iso_2: LV
+    en: 'Latvia'
+    fr: 'Latvia'
+    dialing_code: '+371'
+
+LB:
+    iso_2: LB
+    en: 'Lebanon'
+    fr: 'Lebanon'
+    dialing_code: '+961'
+
+LS:
+    iso_2: LS
+    en: 'Lesotho'
+    fr: 'Lesotho'
+    dialing_code: '+266'
+
+LR:
+    iso_2: LR
+    en: 'Liberia'
+    fr: 'Liberia'
+    dialing_code: '+231'
+
+LY:
+    iso_2: LY
+    en: 'Libya'
+    fr: 'Libya'
+    dialing_code: '+218'
+
+LI:
+    iso_2: LI
+    en: 'Liechtenstein'
+    fr: 'Liechtenstein'
+    dialing_code: '+423'
+
+LT:
+    iso_2: LT
+    en: 'Lithuania'
+    fr: 'Lithuania'
+    dialing_code: '+370'
+
+LU:
+    iso_2: LU
+    en: 'Luxembourg'
+    fr: 'Luxembourg'
+    dialing_code: '+352'
+
+MO:
+    iso_2: MO
+    en: 'Macao'
+    fr: 'Macao'
+    dialing_code: '+853'
+
+MK:
+    iso_2: MK
+    en: 'Macedonia'
+    fr: 'Macedonia'
+    dialing_code: '+389'
+
+MG:
+    iso_2: MG
+    en: 'Madagascar'
+    fr: 'Madagascar'
+    dialing_code: '+261'
+
+MW:
+    iso_2: MW
+    en: 'Malawi'
+    fr: 'Malawi'
+    dialing_code: '+265'
+
+MY:
+    iso_2: MY
+    en: 'Malaysia'
+    fr: 'Malaysia'
+    dialing_code: '+60'
+
+MV:
+    iso_2: MV
+    en: 'Maldives'
+    fr: 'Maldives'
+    dialing_code: '+960'
+
+ML:
+    iso_2: ML
+    en: 'Mali'
+    fr: 'Mali'
+    dialing_code: '+223'
+
+MT:
+    iso_2: MT
+    en: 'Malta'
+    fr: 'Malta'
+    dialing_code: '+356'
+
+MH:
+    iso_2: MH
+    en: 'Marshall Islands'
+    fr: 'Marshall Islands'
+    dialing_code: '+692'
+
+MR:
+    iso_2: MR
+    en: 'Mauritania'
+    fr: 'Mauritania'
+    dialing_code: '+222'
+
+MU:
+    iso_2: MU
+    en: 'Mauritius'
+    fr: 'Mauritius'
+    dialing_code: '+230'
+
+YT:
+    iso_2: YT
+    en: 'Mayotte'
+    fr: 'Mayotte'
+    dialing_code: '+262'
+
+MX:
+    iso_2: MX
+    en: 'Mexico'
+    fr: 'Mexico'
+    dialing_code: '+52'
+
+FM:
+    iso_2: FM
+    en: 'Micronesia'
+    fr: 'Micronesia'
+    dialing_code: '+691'
+
+MD:
+    iso_2: MD
+    en: 'Moldova'
+    fr: 'Moldova'
+    dialing_code: '+373'
+
+MC:
+    iso_2: MC
+    en: 'Monaco'
+    fr: 'Monaco'
+    dialing_code: '+377'
+
+MN:
+    iso_2: MN
+    en: 'Mongolia'
+    fr: 'Mongolia'
+    dialing_code: '+976'
+
+ME:
+    iso_2: ME
+    en: 'Montenegro'
+    fr: 'Montenegro'
+    dialing_code: '+382'
+
+MS:
+    iso_2: MS
+    en: 'Montserrat'
+    fr: 'Montserrat'
+    dialing_code: '+1-664'
+
+MA:
+    iso_2: MA
+    en: 'Morocco'
+    fr: 'Morocco'
+    dialing_code: '+212'
+
+MZ:
+    iso_2: MZ
+    en: 'Mozambique'
+    fr: 'Mozambique'
+    dialing_code: '+258'
+
+MM:
+    iso_2: MM
+    en: 'Myanmar'
+    fr: 'Myanmar'
+    dialing_code: '+95'
+
+NA:
+    iso_2: NA
+    en: 'Namibia'
+    fr: 'Namibia'
+    dialing_code: '+264'
+
+NR:
+    iso_2: NR
+    en: 'Nauru'
+    fr: 'Nauru'
+    dialing_code: '+674'
+
+NP:
+    iso_2: NP
+    en: 'Nepal'
+    fr: 'Nepal'
+    dialing_code: '+977'
+
+NL:
+    iso_2: NL
+    en: 'Netherlands'
+    fr: 'Netherlands'
+    dialing_code: '+31'
+
+AN:
+    iso_2: AN
+    en: 'Netherlands Antilles'
+    fr: 'Netherlands Antilles'
+    dialing_code: '+599'
+
+NC:
+    iso_2: NC
+    en: 'New Caledonia'
+    fr: 'New Caledonia'
+    dialing_code: '+687'
+
+NZ:
+    iso_2: NZ
+    en: 'New Zealand'
+    fr: 'New Zealand'
+    dialing_code: '+64'
+
+NI:
+    iso_2: NI
+    en: 'Nicaragua'
+    fr: 'Nicaragua'
+    dialing_code: '+505'
+
+NE:
+    iso_2: NE
+    en: 'Niger'
+    fr: 'Niger'
+    dialing_code: '+227'
+
+NG:
+    iso_2: NG
+    en: 'Nigeria'
+    fr: 'Nigeria'
+    dialing_code: '+234'
+
+NU:
+    iso_2: NU
+    en: 'Niue'
+    fr: 'Niue'
+    dialing_code: '+683'
+
+KP:
+    iso_2: KP
+    en: 'North Korea'
+    fr: 'North Korea'
+    dialing_code: '+850'
+
+MP:
+    iso_2: MP
+    en: 'Northern Mariana Islands'
+    fr: 'Northern Mariana Islands'
+    dialing_code: '+1-670'
+
+NO:
+    iso_2: NO
+    en: 'Norway'
+    fr: 'Norway'
+    dialing_code: '+47'
+
+OM:
+    iso_2: OM
+    en: 'Oman'
+    fr: 'Oman'
+    dialing_code: '+968'
+
+PK:
+    iso_2: PK
+    en: 'Pakistan'
+    fr: 'Pakistan'
+    dialing_code: '+92'
+
+PW:
+    iso_2: PW
+    en: 'Palau'
+    fr: 'Palau'
+    dialing_code: '+680'
+
+PS:
+    iso_2: PS
+    en: 'Palestine'
+    fr: 'Palestine'
+    dialing_code: '+970'
+
+PA:
+    iso_2: PA
+    en: 'Panama'
+    fr: 'Panama'
+    dialing_code: '+507'
+
+PG:
+    iso_2: PG
+    en: 'Papua New Guinea'
+    fr: 'Papua New Guinea'
+    dialing_code: '+675'
+
+PY:
+    iso_2: PY
+    en: 'Paraguay'
+    fr: 'Paraguay'
+    dialing_code: '+595'
+
+PE:
+    iso_2: PE
+    en: 'Peru'
+    fr: 'Peru'
+    dialing_code: '+51'
+
+PH:
+    iso_2: PH
+    en: 'Philippines'
+    fr: 'Philippines'
+    dialing_code: '+63'
+
+PN:
+    iso_2: PN
+    en: 'Pitcairn'
+    fr: 'Pitcairn'
+    dialing_code: '+64'
+
+PL:
+    iso_2: PL
+    en: 'Poland'
+    fr: 'Poland'
+    dialing_code: '+48'
+
+PT:
+    iso_2: PT
+    en: 'Portugal'
+    fr: 'Portugal'
+    dialing_code: '+351'
+
+PR:
+    iso_2: PR
+    en: 'Puerto Rico'
+    fr: 'Puerto Rico'
+    dialing_code: '+1-787, 1-939'
+
+QA:
+    iso_2: QA
+    en: 'Qatar'
+    fr: 'Qatar'
+    dialing_code: '+974'
+
+CG:
+    iso_2: CG
+    en: 'Republic of the Congo'
+    fr: 'Republic of the Congo'
+    dialing_code: '+242'
+
+RE:
+    iso_2: RE
+    en: 'Reunion'
+    fr: 'Reunion'
+    dialing_code: '+262'
+
+RO:
+    iso_2: RO
+    en: 'Romania'
+    fr: 'Romania'
+    dialing_code: '+40'
+
+RU:
+    iso_2: RU
+    en: 'Russia'
+    fr: 'Russia'
+    dialing_code: '+7'
+
+RW:
+    iso_2: RW
+    en: 'Rwanda'
+    fr: 'Rwanda'
+    dialing_code: '+250'
+
+BL:
+    iso_2: BL
+    en: 'Saint Barthelemy'
+    fr: 'Saint Barthelemy'
+    dialing_code: '+590'
+
+SH:
+    iso_2: SH
+    en: 'Saint Helena'
+    fr: 'Saint Helena'
+    dialing_code: '+290'
+
+KN:
+    iso_2: KN
+    en: 'Saint Kitts and Nevis'
+    fr: 'Saint Kitts and Nevis'
+    dialing_code: '+1-869'
+
+LC:
+    iso_2: LC
+    en: 'Saint Lucia'
+    fr: 'Saint Lucia'
+    dialing_code: '+1-758'
+
+MF:
+    iso_2: MF
+    en: 'Saint Martin'
+    fr: 'Saint Martin'
+    dialing_code: '+590'
+
+PM:
+    iso_2: PM
+    en: 'Saint Pierre and Miquelon'
+    fr: 'Saint Pierre and Miquelon'
+    dialing_code: '+508'
+
+VC:
+    iso_2: VC
+    en: 'Saint Vincent and the Grenadines'
+    fr: 'Saint Vincent and the Grenadines'
+    dialing_code: '+1-784'
+
+WS:
+    iso_2: WS
+    en: 'Samoa'
+    fr: 'Samoa'
+    dialing_code: '+685'
+
+SM:
+    iso_2: SM
+    en: 'San Marino'
+    fr: 'San Marino'
+    dialing_code: '+378'
+
+ST:
+    iso_2: ST
+    en: 'Sao Tome and Principe'
+    fr: 'Sao Tome and Principe'
+    dialing_code: '+239'
+
+SA:
+    iso_2: SA
+    en: 'Saudi Arabia'
+    fr: 'Saudi Arabia'
+    dialing_code: '+966'
+
+SN:
+    iso_2: SN
+    en: 'Senegal'
+    fr: 'Senegal'
+    dialing_code: '+221'
+
+RS:
+    iso_2: RS
+    en: 'Serbia'
+    fr: 'Serbia'
+    dialing_code: '+381'
+
+SC:
+    iso_2: SC
+    en: 'Seychelles'
+    fr: 'Seychelles'
+    dialing_code: '+248'
+
+SL:
+    iso_2: SL
+    en: 'Sierra Leone'
+    fr: 'Sierra Leone'
+    dialing_code: '+232'
+
+SG:
+    iso_2: SG
+    en: 'Singapore'
+    fr: 'Singapore'
+    dialing_code: '+65'
+
+SX:
+    iso_2: SX
+    en: 'Sint Maarten'
+    fr: 'Sint Maarten'
+    dialing_code: '+1-721'
+
+SK:
+    iso_2: SK
+    en: 'Slovakia'
+    fr: 'Slovakia'
+    dialing_code: '+421'
+
+SI:
+    iso_2: SI
+    en: 'Slovenia'
+    fr: 'Slovenia'
+    dialing_code: '+386'
+
+SB:
+    iso_2: SB
+    en: 'Solomon Islands'
+    fr: 'Solomon Islands'
+    dialing_code: '+677'
+
+SO:
+    iso_2: SO
+    en: 'Somalia'
+    fr: 'Somalia'
+    dialing_code: '+252'
+
+ZA:
+    iso_2: ZA
+    en: 'South Africa'
+    fr: 'South Africa'
+    dialing_code: '+27'
+
+KR:
+    iso_2: KR
+    en: 'South Korea'
+    fr: 'South Korea'
+    dialing_code: '+82'
+
+SS:
+    iso_2: SS
+    en: 'South Sudan'
+    fr: 'South Sudan'
+    dialing_code: '+211'
+
+ES:
+    iso_2: ES
+    en: 'Spain'
+    fr: 'Spain'
+    dialing_code: '+34'
+
+LK:
+    iso_2: LK
+    en: 'Sri Lanka'
+    fr: 'Sri Lanka'
+    dialing_code: '+94'
+
+SD:
+    iso_2: SD
+    en: 'Sudan'
+    fr: 'Sudan'
+    dialing_code: '+249'
+
+SR:
+    iso_2: SR
+    en: 'Suriname'
+    fr: 'Suriname'
+    dialing_code: '+597'
+
+SJ:
+    iso_2: SJ
+    en: 'Svalbard and Jan Mayen'
+    fr: 'Svalbard and Jan Mayen'
+    dialing_code: '+47'
+
+SZ:
+    iso_2: SZ
+    en: 'Swaziland'
+    fr: 'Swaziland'
+    dialing_code: '+268'
+
+SE:
+    iso_2: SE
+    en: 'Sweden'
+    fr: 'Sweden'
+    dialing_code: '+46'
+
+CH:
+    iso_2: CH
+    en: 'Switzerland'
+    fr: 'Switzerland'
+    dialing_code: '+41'
+
+SY:
+    iso_2: SY
+    en: 'Syria'
+    fr: 'Syria'
+    dialing_code: '+963'
+
+TW:
+    iso_2: TW
+    en: 'Taiwan'
+    fr: 'Taiwan'
+    dialing_code: '+886'
+
+TJ:
+    iso_2: TJ
+    en: 'Tajikistan'
+    fr: 'Tajikistan'
+    dialing_code: '+992'
+
+TZ:
+    iso_2: TZ
+    en: 'Tanzania'
+    fr: 'Tanzania'
+    dialing_code: '+255'
+
+TH:
+    iso_2: TH
+    en: 'Thailand'
+    fr: 'Thailand'
+    dialing_code: '+66'
+
+TG:
+    iso_2: TG
+    en: 'Togo'
+    fr: 'Togo'
+    dialing_code: '+228'
+
+TK:
+    iso_2: TK
+    en: 'Tokelau'
+    fr: 'Tokelau'
+    dialing_code: '+690'
+
+TO:
+    iso_2: TO
+    en: 'Tonga'
+    fr: 'Tonga'
+    dialing_code: '+676'
+
+TT:
+    iso_2: TT
+    en: 'Trinidad and Tobago'
+    fr: 'Trinidad and Tobago'
+    dialing_code: '+1-868'
+
+TN:
+    iso_2: TN
+    en: 'Tunisia'
+    fr: 'Tunisia'
+    dialing_code: '+216'
+
+TR:
+    iso_2: TR
+    en: 'Turkey'
+    fr: 'Turkey'
+    dialing_code: '+90'
+
+TM:
+    iso_2: TM
+    en: 'Turkmenistan'
+    fr: 'Turkmenistan'
+    dialing_code: '+993'
+
+TC:
+    iso_2: TC
+    en: 'Turks and Caicos Islands'
+    fr: 'Turks and Caicos Islands'
+    dialing_code: '+1-649'
+
+TV:
+    iso_2: TV
+    en: 'Tuvalu'
+    fr: 'Tuvalu'
+    dialing_code: '+688'
+
+VI:
+    iso_2: VI
+    en: 'U.S. Virgin Islands'
+    fr: 'U.S. Virgin Islands'
+    dialing_code: '+1-340'
+
+UG:
+    iso_2: UG
+    en: 'Uganda'
+    fr: 'Uganda'
+    dialing_code: '+256'
+
+UA:
+    iso_2: UA
+    en: 'Ukraine'
+    fr: 'Ukraine'
+    dialing_code: '+380'
+
+AE:
+    iso_2: AE
+    en: 'United Arab Emirates'
+    fr: 'United Arab Emirates'
+    dialing_code: '+971'
+
+GB:
+    iso_2: GB
+    en: 'United Kingdom'
+    fr: 'United Kingdom'
+    dialing_code: '+44'
+
+US:
+    iso_2: US
+    en: 'United States'
+    fr: 'United States'
+    dialing_code: '+1'
+
+UY:
+    iso_2: UY
+    en: 'Uruguay'
+    fr: 'Uruguay'
+    dialing_code: '+598'
+
+UZ:
+    iso_2: UZ
+    en: 'Uzbekistan'
+    fr: 'Uzbekistan'
+    dialing_code: '+998'
+
+VU:
+    iso_2: VU
+    en: 'Vanuatu'
+    fr: 'Vanuatu'
+    dialing_code: '+678'
+
+VA:
+    iso_2: VA
+    en: 'Vatican'
+    fr: 'Vatican'
+    dialing_code: '+379'
+
+VE:
+    iso_2: VE
+    en: 'Venezuela'
+    fr: 'Venezuela'
+    dialing_code: '+58'
+
+VN:
+    iso_2: VN
+    en: 'Vietnam'
+    fr: 'Vietnam'
+    dialing_code: '+84'
+
+WF:
+    iso_2: WF
+    en: 'Wallis and Futuna'
+    fr: 'Wallis and Futuna'
+    dialing_code: '+681'
+
+EH:
+    iso_2: EH
+    en: 'Western Sahara'
+    fr: 'Western Sahara'
+    dialing_code: '+212'
+
+YE:
+    iso_2: YE
+    en: 'Yemen'
+    fr: 'Yemen'
+    dialing_code: '+967'
+
+ZM:
+    iso_2: ZM
+    en: 'Zambia'
+    fr: 'Zambia'
+    dialing_code: '+260'
+
+ZW:
+    iso_2: ZW
+    en: 'Zimbabwe'
+    fr: 'Zimbabwe'
+    dialing_code: '+263'

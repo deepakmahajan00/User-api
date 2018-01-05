@@ -1,0 +1,9 @@
+canopy_common:
+    verify_ssl: %verify_ssl%
+    api_endpoint:
+        user: %user_api_endpoint%
+        mailer: %mailer_api_endpoint%
+        dashboard: %dashboard_api_endpoint%
+        catalog: %catalog_api_endpoint%
+        media: %media_api_endpoint%
+        ecommerce: %ecommerce_api_endpoint%

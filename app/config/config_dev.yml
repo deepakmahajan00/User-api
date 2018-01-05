@@ -1,0 +1,52 @@
+imports:
+    - { resource: config.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+    session:
+        cookie_secure: false
+
+web_profiler:
+    toolbar: "%debug_toolbar%"
+    intercept_redirects: "%debug_redirects%"
+
+monolog:
+    handlers:
+        main:
+            type:   stream
+            path:   "%kernel.logs_dir%/%kernel.environment%.log"
+            level:  debug
+        console:
+            type:   console
+            bubble: false
+        endpoint:
+            type:   stream
+            path:   "%kernel.logs_dir%/%kernel.environment%_endpoint.log"
+            channels: endpoint
+            formatter: endpoint_formatter
+        pinkfire:
+            type: service
+            id: pinkfire.monolog_handler
+            channels: endpoint
+        # uncomment to get logging in your browser
+        # you may have to allow bigger header sizes in your Web server configuration
+        #firephp:
+        #    type:   firephp
+        #    level:  info
+        #chromephp:
+        #    type:   chromephp
+        #    level:  info
+
+assetic:
+    use_controller: "%use_assetic_controller%"
+
+#swiftmailer:
+#    delivery_address: me@example.com
+
+pinkfire:
+    application : "user-api"
+    host: "localhost"
+    port: 3000

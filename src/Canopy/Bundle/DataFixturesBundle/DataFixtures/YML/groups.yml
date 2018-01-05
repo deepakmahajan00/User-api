@@ -1,0 +1,55 @@
+-
+    name: ROLE_ANONYMOUS
+    description: 'Website''s default visitor'
+    permissions:
+        - PERM_LOGIN
+        - PERM_REGISTER
+
+-
+    name: ROLE_REGISTERED_USER
+    description: 'Basic user'
+    permissions:
+        - PERM_LOGOUT
+
+-
+    name: ROLE_CUSTOMER_REQUESTOR
+    description: 'Customer Requestor'
+    permissions:
+        - PERM_LOGOUT
+        - PERM_CART
+        - PERM_ORDER
+        - PERM_DASHBOARD_SOLUTION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_USER_SHOW
+
+-
+    name: ROLE_CUSTOMER_APPROVER
+    description: 'Customer Approver'
+    permissions:
+        - PERM_LOGOUT
+        - PERM_CART
+        - PERM_ORDER
+        - PERM_DASHBOARD_SOLUTION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_EDIT
+        - PERM_DASHBOARD_ORGANISATION_ACTIVITY_SHOW
+        - PERM_DASHBOARD_ORGANISATION_USER_SHOW
+        - PERM_DASHBOARD_ORGANISATION_USER_EDIT
+
+-
+    name: ROLE_ADMIN
+    description: 'System Administrator'
+    permissions:
+        - PERM_LOGOUT
+        - PERM_CART
+        - PERM_ORDER
+        - PERM_DASHBOARD_SOLUTION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_SHOW
+        - PERM_DASHBOARD_ORGANISATION_EDIT
+        - PERM_DASHBOARD_ORGANISATION_ACTIVITY_SHOW
+        - PERM_DASHBOARD_ORGANISATION_USER_SHOW
+        - PERM_DASHBOARD_ORGANISATION_USER_EDIT
+        - PERM_DASHBOARD_PRODUCT_MANAGEMENT
+        - PERM_DASHBOARD_POLICY
+        - PERM_DASHBOARD_ADMIN_USER_ACTIVITY_SHOW
+        - PERM_DASHBOARD_ADMIN_USER_EDIT

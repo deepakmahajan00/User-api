@@ -1,0 +1,200 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: csa_guzzle.yml }
+    - { resource: common_bundle.yml }
+
+framework:
+    #esi:             ~
+    #translator:      { fallback: "%locale%" }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # handler_id set to null will use default session handler from php.ini
+        handler_id:  ~
+        name: canopy_user_api_session
+        cookie_secure: true
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
+
+# Assetic Configuration
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+    bundles:        [ ]
+    filters:
+        cssrewrite: ~
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   "%database_driver%"
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_mapping: true
+
+doctrine_migrations:
+    dir_name: %kernel.root_dir%/Resources/DoctrineMigrations
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    port:      "%mailer_port%"
+
+sensio_framework_extra:
+    router:  { annotations: true }
+    request: { converters: true }
+    view:    { annotations: false }
+    cache:   { annotations: true }
+
+fos_rest:
+    exception:
+        codes:
+            'Symfony\Component\Security\Core\Exception\DisabledException': 401
+            'Symfony\Component\Security\Core\Exception\CredentialsExpiredException': 401
+        messages:
+            'Symfony\Component\HttpKernel\Exception\BadRequestHttpException': true
+            'Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException': true
+            'Symfony\Component\HttpKernel\Exception\HttpException': true
+            'Symfony\Component\Security\Core\Exception\DisabledException': true
+            'Symfony\Component\Security\Core\Exception\CredentialsExpiredException': true
+    body_converter:
+        enabled: true
+        validate: true
+        validation_errors_argument: validationErrors
+    format_listener:
+        rules:
+            - { path: ^/api/, priorities: [json], fallback_format: false, prefer_extension: true }
+    view:
+        view_response_listener: 'force'
+    param_fetcher_listener: force
+    serializer:
+        serialize_null: true
+
+canopy_user:
+    media_api_endpoint: %media_api_endpoint%
+    media_web_paths:
+        local: '[scheme]://[host]/uploads'
+
+nelmio_cors:
+    paths:
+        '^/':
+            allow_origin: ['*']
+            allow_headers: ['*']
+            allow_methods: ['POST', 'PUT', 'GET', 'DELETE', 'OPTIONS']
+            max_age: 3600
+
+nelmio_api_doc:
+    sandbox:
+        authentication:
+            name: Authorization
+            delivery: header
+            type:     bearer
+            custom_endpoint: false
+        accept_type: application/json
+        body_format:
+            default_format: json
+        request_format:
+            formats:
+                json: application/json
+
+parameters:
+    regex_uuid_v4: "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    regex_uuid_unbound_id: "^[0-9a-f]{6}-[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    brands:
+        canopy:
+            email:
+                logo: %temp_media_path%canopy.png
+                company: Canopy Cloud Enterprise store
+                html_signature: |
+                           Kind Regards,<br />
+                           Canopy Care <br />
+                           Email: <a href="mailto:CanopyCare@canopy-cloud.com">CanopyCare@canopy-cloud.com</a> <br />
+                           Online: <a href="https://support.canopy-cloud.com/hc/en-gb">https://support.canopy-cloud.com/hc/en-gb</a> <br />
+                           Telephone: <br />
+                           Brazil: +55 1138091177 <br />
+                           France: +33 148115619 <br />
+                           Germany: +49 6929993764 <br />
+                           India: +91 2261875183 <br />
+                           Malaysia: +60 382131605 <br />
+                           Netherlands: +31 402957411 <br />
+                           Poland: +48 525822613 <br />
+                           United Kingdom: +44 2076600840 <br />
+                           United States: +1 3106165351 <br />
+                text_signature: |
+                           Kind Regards,
+                           Canopy Care 
+                           Email: CanopyCare@canopy-cloud.com
+                           Online: https://support.canopy-cloud.com/hc/en-gb
+                           Telephone: 
+                           Brazil: +55 1138091177
+                           France: +33 148115619
+                           Germany: +49 6929993764
+                           India: +91 2261875183
+                           Malaysia: +60 382131605
+                           Netherlands: +31 402957411
+                           Poland: +48 525822613
+                           United Kingdom: +44 2076600840
+                           United States: +1 3106165351
+                bcc: %brands_canopy_email_bcc%
+                sender:
+                    email: contact@canopy-cloud.com
+                    name: Canopy IT
+                registration:
+                    subject: 'Welcome to Canopy Store'
+                resetpassword:
+                    subject: 'Canopy Store: Password Reset'
+                verificationcode:
+                    subject: 'Canopy Store: Confirmation of Email Address'
+                resetpasswordurl: %marketplace_ui_url%/reset-password
+                emailverified:
+                    subject: 'Confirmation of your account request'
+                passwordexpired:
+                    subject: 'Canopy Store: Password Expired'
+                dashboardurl: %dashboard_ui_url%
+        nokia-ui:
+            email:
+                logo: %temp_media_path%nokia-ui.png
+                company: Nokia Enterprise Platform
+                signature: The Nokia IT team
+                bcc: %brands_nokia-ui_email_bcc%
+                sender:
+                    email: contact@nokia.com
+                    name: The Nokia IT Team
+                registration:
+                    subject: '[NSN] You registered on Nokia Services Networks'
+                resetpassword:
+                    subject: '[NSN] Reset your password'
+                verificationcode:
+                    subject: '[NSN] Verify your account'
+                resetpasswordurl: %nokia_ui_url%/reset-password
+    # The header Authorisation is store in the credential, this parameter avoid the erase to happend
+    # after the security resolution, to be used in calls to others api
+    security.authentication.manager.erase_credentials: false

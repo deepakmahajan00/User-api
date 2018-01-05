@@ -1,0 +1,40 @@
+{% block subject -%}
+    Account request: you will be contacted shortly
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ fullname }},
+
+    Your account request on Canopy Store could not be automatically approved. A member of our team will be in touch shortly.
+
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Account request: you will be contacted shortly
+        {% endblock %}
+
+        {% block body %}
+            Hello {{ fullname }},
+            <br /><br />
+            Your account request on Canopy Store could not be automatically approved. A member of our team will be in touch shortly.
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

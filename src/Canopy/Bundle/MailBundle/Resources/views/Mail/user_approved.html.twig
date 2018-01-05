@@ -1,0 +1,48 @@
+{% block subject -%}
+    Your account has been activated
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ firstName }},
+
+    Good news!
+
+    Your account on the Canopy Store has been activated. Free trials of our solutions are now waiting for you.
+
+    Please keep a record of your customer ID: {{customerId}}
+
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Your account has been activated
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ firstName }},
+            <br /><br />
+            Good news!
+            <br />
+            Your account on the Canopy Store has been activated. Free trials of our solutions are now waiting for you.
+            <br /><br />
+            Please keep a record of your customer ID: {{customerId}}
+            <br />
+            If you require any further assistance do not hesitate to contact us.
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

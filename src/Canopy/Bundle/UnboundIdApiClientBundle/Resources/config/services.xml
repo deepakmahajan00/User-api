@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="api.unboundid.oauth" class="Canopy\Bundle\UnboundIdApiClientBundle\Endpoint\OAuthEndpoint" parent="abstract_endpoint">
+            <argument>%unboundid_api_oauth_endpoint%</argument>
+
+            <call method="setCredentials">
+                <argument>%unboundid_client_api%</argument>
+                <argument>%unboundid_client_secret%</argument>
+            </call>
+
+            <call method="setKernelRootDir">
+                <argument type="string">%kernel.root_dir%</argument>
+            </call>
+        </service>
+
+        <service id="api.unboundid.dataview" class="Canopy\Bundle\UnboundIdApiClientBundle\Endpoint\DataviewEndpoint" parent="abstract_endpoint">
+            <argument>%unboundid_api_dataview_endpoint%</argument>
+
+            <call method="setOAuthEndpoint">
+                <argument type="service" id="api.unboundid.oauth" />
+            </call>
+        </service>
+
+    </services>
+
+</container>

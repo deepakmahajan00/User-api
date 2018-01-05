@@ -1,0 +1,40 @@
+{% block subject -%}
+    Notification
+{%- endblock %}
+
+{% block body_text %}
+    Hello,
+
+    You have a new notification.
+
+    {{ text }}
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Notification
+        {% endblock %}
+
+        {% block body %}
+            Hello,
+            <br /><br />
+            You have a new notification.
+            <br /><br />
+            {{ text }}
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

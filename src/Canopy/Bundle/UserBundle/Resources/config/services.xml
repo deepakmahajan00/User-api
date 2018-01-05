@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <!-- Serializers -->
+        <service id="canopy.serialization_handler.user" class="Canopy\Bundle\UserBundle\Serializer\Handler\UserHandler">
+            <argument type="service" id="router" />
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument type="service" id="api.catalog.policy" />
+            <argument type="service" id="canopy.api.unboundid.user_management" />
+            <tag name="jms_serializer.subscribing_handler" />
+        </service>
+
+        <service id="canopy.serialization_handler.domain_name" class="Canopy\Bundle\UserBundle\Serializer\Handler\DomainNameHandler">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <tag name="jms_serializer.subscribing_handler" />
+        </service>
+
+        <!-- Event Subscribers -->
+        <service id="canopy.authorisation_header_listener" class="Canopy\Bundle\UserBundle\EventListener\AuthenticationHeaderListener">
+            <tag name="kernel.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.user" class="Canopy\Bundle\UserBundle\EventListener\UserListener">
+            <argument type="service" id="api.dashboard.event" />
+            <argument type="service" id="canopy.branded_mailer" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.user_update" class="Canopy\Bundle\UserBundle\EventListener\UserUpdateListener">
+            <argument type="service" id="canopy.branded_mailer" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.user_join_organisation" class="Canopy\Bundle\UserBundle\EventListener\UserJoinOrganisationListener">
+            <argument type="service" id="api.dashboard.event" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.user_log" class="Canopy\Bundle\UserBundle\EventListener\ActivityLogUserListener">
+            <argument>Canopy\Bundle\UserBundle\Entity\User</argument>
+            <argument>user_profile</argument>
+            <argument type="service" id="api.dashboard.event" />
+            <argument type="service" id="security.token_storage" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.organisation_log" class="Canopy\Bundle\UserBundle\EventListener\ActivityLogOrganisationListener">
+            <argument>Canopy\Bundle\UserBundle\Entity\Organisation</argument>
+            <argument>organisation_profile</argument>
+            <argument type="service" id="api.dashboard.event" />
+            <argument type="service" id="security.token_storage" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <service id="canopy.event_listener.policy_accepted" class="Canopy\Bundle\UserBundle\EventListener\PolicyAcceptedListener">
+            <argument type="service" id="api.dashboard.event" />
+            <argument type="service" id="api.catalog.policy" />
+
+            <tag name="doctrine.event_subscriber" />
+        </service>
+
+        <!-- Others -->
+        <service id="canopy.api.cordys.users" class="Canopy\Bundle\UserBundle\Service\CordysManager" parent="abstract_endpoint">
+            <argument>%cordys_api_endpoint%</argument>
+
+            <call method="setCredentials">
+                <argument>%cordys_api_user%</argument>
+                <argument>%cordys_api_password%</argument>
+            </call>
+        </service>
+
+         <!-- Manager -->
+        <service id="canopy.organisation.manager" class="Canopy\Bundle\UserBundle\Service\OrganisationManager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+        </service>
+
+        <service id="canopy.api.unboundid.user_management" class="Canopy\Bundle\UserBundle\Service\UnboundIDUserManager">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument type="service" id="api.unboundid.dataview" />
+            <argument type="service" id="api.catalog.policy" />
+            <argument type="service" id="canopy.branded_mailer" />
+        </service>
+
+        <service id="canopy.api.upload" class="Canopy\Bundle\UserBundle\Service\UploadFileManager">
+            <argument type="service" id="api.media" />
+            <argument type="service" id="request_stack" />
+            <argument type="service" id="kernel" />
+        </service>
+
+        <service id="canopy.domain_name.manager" class="Canopy\Bundle\UserBundle\Service\DomainNameManager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+        </service>
+
+    </services>
+</container>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="canopy.unboundid.user_provider" class="Canopy\Bundle\UserBundle\Security\Authentication\UnboundidUserProvider">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+        </service>
+
+        <service id="canopy.apitoken_authenticator" class="Canopy\Bundle\UserBundle\Security\Authentication\ApiTokenAuthenticator">
+            <argument type="service" id="api.unboundid.oauth" />
+            <argument type="service" id="logger" />
+            <argument type="service" id="security.user_checker" />
+        </service>
+
+        <!-- Voter -->
+        <service id="canopy.group.voter" class="Canopy\Bundle\UserBundle\Security\Authorisation\GroupVoter" public="false">
+            <argument type="service" id="request_stack" />
+            <tag name="security.voter"/>
+        </service>
+    </services>
+</container>

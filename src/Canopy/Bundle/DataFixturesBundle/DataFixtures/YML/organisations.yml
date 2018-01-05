@@ -1,0 +1,32 @@
+-
+    name: Canopy
+    customerId: canopy
+    description: 'Canopy, an Atos company partnered with two of the biggest leaders in IT—EMC and VMware, is a one-stop-shop solution for Cloud-computing. Built upon a tight ecosystem of best-of-breed technology, we are focused on bringing the benefits of Next Generation IT and cloud delivery to large organizations. Security sits at the height of the Canopy solution philosophy and is based on pre-built environments on the strongest technology foundation. Using industry leading automation tools, Canopy allows enterprise companies to achieve their business goals and service levels in a multi-tenant or a dedicated single-tenant environment.'
+    vatNumber: Canopy-Vat-Number
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    createdAt: '2014-09-03'
+    domainNames: []
+    address:
+        street1: 94-98 boulevard Victor Hugo
+        zipcode: 92110
+        city: Clichy
+        state: MyState
+        country: Country.FR
+
+-
+    name: McGraw Hill
+    customerId: mcg
+    description: 'McGraw Hill Financial is a leader in credit ratings, benchmarks and analytics for the global capital and commodity markets.'
+    vatNumber: McGrawHill-Vat-Number
+    policyUuid: 97cd9e96-e230-4c7d-b90e-029eadc16fb1
+    answeredLatestPolicy: true
+    createdAt: '2014-09-14'
+    domainNames:
+        - 'mcgraw-hill.com'
+    address:
+        street1: 94-98 boulevard Victor Hugo
+        zipcode: 92110
+        city: Clichy
+        state: MyState
+        country: Country.FR

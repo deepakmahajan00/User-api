@@ -1,0 +1,96 @@
+{
+    "name": "canopy/user-api",
+    "license": "proprietary",
+    "type": "project",
+    "description": "Backend API to manage User through OAuth autorisation.",
+    "autoload": {
+        "psr-0": { "": "src/", "SymfonyStandard": "app/" }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:canopy-cloud/canopy-common-bundle.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": "2.6.*",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+
+        "canopy/common-bundle": "~2.2",
+        "willdurand/hateoas-bundle": "1.0.*@dev",
+        "nelmio/cors-bundle": "~1.3.1",
+        "nelmio/api-doc-bundle": "~2.4",
+        "doctrine/migrations": "1.0.*@dev",
+        "doctrine/doctrine-migrations-bundle": "2.1.*@dev",
+        "rhumsaa/uuid": "~2.8"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "~2.3",
+        "doctrine/doctrine-fixtures-bundle": "2.2.0",
+        "liip/functional-test-bundle": "~1.0",
+        "phpunit/phpunit": "~4.2",
+        "pinkfire/pinkfire-bundle": "~1.0.1",
+        "sami/sami": "~3.0"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "SymfonyStandard\\Composer::hookRootPackageInstall"
+        ],
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_driver": "SYMFONY__DATABASE_DRIVER",
+                "database_host": "SYMFONY__DATABASE_HOST",
+                "database_driver": "SYMFONY__DATABASE_DRIVER",
+                "database_host": "SYMFONY__DATABASE_HOST",
+                "database_port": "SYMFONY__DATABASE_PORT",
+                "database_name": "SYMFONY__DATABASE_NAME",
+                "database_user": "SYMFONY__DATABASE_USER",
+                "database_password": "SYMFONY__DATABASE_PASSWORD",
+                "mailer_transport": "SYMFONY__MAILER_TRANSPORT",
+                "mailer_host": "SYMFONY__MAILER_HOST",
+                "mailer_user": "SYMFONY__MAILER_USER",
+                "mailer_password": "SYMFONY__MAILER_PASSWORD",
+                "user_api_endpoint": "SYMFONY__USER_API_ENDPOINT",
+                "media_api_endpoint": "SYMFONY__MEDIA_API_ENDPOINT",
+                "dashboard_api_endpoint": "SYMFONY__DASHBOARD_API_ENDPOINT",
+                "catalog_api_endpoint": "SYMFONY__CATALOG_API_ENDPOINT",
+                "media_api_endpoint": "SYMFONY__MEDIA_API_ENDPOINT",
+                "base_url": "SYMFONY__BASE_URL"
+            }
+        }
+    }
+}

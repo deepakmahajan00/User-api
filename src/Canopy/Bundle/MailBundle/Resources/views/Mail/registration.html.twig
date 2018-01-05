@@ -1,0 +1,44 @@
+{% block subject -%}
+    {{ brand.email.registration.subject }}
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ fullname }},
+
+    Welcome and thank you for registering on the Canopy Store.
+
+    Feel free to browse our catalogue and try our solutions.
+
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            {{ brand.email.registration.subject }}
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ fullname }},
+            <br /><br />
+            Welcome and thank you for registering on the Canopy Store.
+            <br /><br />
+            Feel free to browse our catalogue and try our solutions.
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

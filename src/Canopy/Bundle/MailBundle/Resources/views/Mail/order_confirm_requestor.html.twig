@@ -1,0 +1,71 @@
+{% block subject -%}
+    Thank you for your order
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ first_name }},
+
+    Thank you!
+    
+    Your order {{ order.uuid }} is now confirmed and includes the items below.
+
+    {% for item in order.cart.items %}
+    	{{ item.custom_name }} [{{ item.uuid }}] - {% if item.trial == true %} TRIAL {% else %} BUY {% endif %}
+    {% endfor %}
+    
+    To check the status of your order please click {{ brand.email.dashboardurl }}. We will keep you informed of progress by email.
+    
+    If you require any further assistance do not hesitate to contact us.
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            Thank you for your order
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ first_name }},
+            <br /><br />
+            Thank you!
+            <br /><br />
+            Your order {{ order.uuid }} is now confirmed and includes the items below.
+            <br /><br />
+            <table = border="1" cellpadding="5" cellspacing="0">
+		        <thead>
+		            <tr>
+		                <th>Name</th>
+		                <th>Purchase Id</th>
+		                <th>Trial/Buy</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            {% for item in order.cart.items %}
+		            	<tr>
+				    		<td>{{ item.custom_name }}</td>
+				    		<td>{{ item.uuid }}</td>
+				    		<td>{% if item.trial == true %} TRIAL {% else %} BUY {% endif %}</td>
+				    	</tr>
+				    {% endfor %}
+				</tbody>
+		    </table>
+            <br /><br />
+            To check the status of your order please click <a href="{{ brand.email.dashboardurl }}">{{ brand.email.dashboardurl }}</a>. We will keep you informed of progress by email.
+            <br /><br />
+            If you require any further assistance do not hesitate to contact us.
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}

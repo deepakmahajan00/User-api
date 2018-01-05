@@ -1,0 +1,40 @@
+{% block subject -%}
+    {{ brand.email.verificationcode.subject }}
+{%- endblock %}
+
+{% block body_text %}
+    Dear {{ fullname }},
+
+    To verify your e-mail address, please enter the code stated below.
+
+    Code: {{ verificationCode }}
+
+    {{ brand.email.text_signature|raw }}
+{% endblock %}
+
+{% block body_html %}
+    {% embed 'CanopyMailBundle:Mail:layout.html.twig' %}
+
+        {% block title %}
+            {{ brand.email.verificationcode.subject }}
+        {% endblock %}
+
+        {% block body %}
+            Dear {{ fullname }},
+            <br /><br />
+            To verify your e-mail address, please enter the code stated below.
+            <br /><br />
+            Code: <b>{{ verificationCode }}</b>
+            <br />
+        {% endblock %}
+
+        {% block footer %}
+            {{ brand.email.html_signature|raw }}
+        {% endblock %}
+
+        {% block logo %}
+            <img src="{{ brand.email.logo }}" alt="{{ brand.email.company }}" />
+        {% endblock %}
+
+    {% endembed %}
+{% endblock %}
